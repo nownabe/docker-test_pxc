@@ -5,6 +5,8 @@ image="nownabe/test_pxc"
 hosts=()
 cluster_addr=""
 
+chmod 600 ./id_rsa
+
 for ((i=0; i<cluster_size; i++)); do
   name="${name_base}${i}"
 
